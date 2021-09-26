@@ -1,7 +1,5 @@
 "use strict";
 exports.main = async (event, context) => {
-  //event为客户端上传的参数
-  console.log("event : ", event);
 
   const res = await uniCloud.httpclient.request(
     "http://wallpaper.apc.360.cn/index.php?c=WallPaper&a=getAllCategories",
